@@ -487,6 +487,7 @@ z-index: 100;
   height: 300px;
   width: 300px;
   border-radius: 500px;
+  border: 0px;
 }
 .contactText{
   color: #0B009B
@@ -506,6 +507,7 @@ z-index: 100;
 }
 .contactText{
   font-size: large;
+  font-weight: bold;
 }
 body{
   display: flex;
