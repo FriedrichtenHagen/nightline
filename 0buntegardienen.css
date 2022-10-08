@@ -10,9 +10,9 @@
 
 /* Header and Navigation Bar */
 
-.logo{
-  color:  white;
-  letter-spacing: 2px;
+.logo img{
+  color: white;
+  max-height: 50px
 }
 
 nav{
@@ -23,7 +23,7 @@ width: 100%;
 justify-content: space-between;
 align-items: center;
 min-height: 5vh;
-background-color: #2f3669;
+z-index: 100;
 }
 
 .nav-links{
@@ -55,7 +55,7 @@ background-color: #2f3669;
 }
 
 .burger{
-  display: none;
+  display: block;
   cursor: pointer;
 }
 
@@ -67,7 +67,7 @@ background-color: #2f3669;
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width:800px){
+/* @media screen and (max-width:800px){ */
   body{
     overflow-x: hidden;
   }
@@ -93,11 +93,7 @@ background-color: #2f3669;
     gap: 20px;
   }
 
-  .burger{
-    display: block;
-  }
-
-}
+/* } */
 
 .nav-active{
   transform: translateX(0%);
@@ -136,7 +132,7 @@ background-color: #2f3669;
 
 .lang_select_menu ul{
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: 0;
   margin: 0;
   padding: 10px;
@@ -246,7 +242,9 @@ background-color: #2f3669;
   color: white;
 }
 
-
+/*  */
+/* Footer */
+/*  */
 
 .fussboden li:hover{
   background-color: white;
@@ -256,6 +254,35 @@ background-color: #2f3669;
 .fussboden li a:hover{
   color: #2f3669;
 }
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-text-cnt {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-text {
+  font-size: 2.5em;
+}
+
+.footer-impressum {}
+
+
+
+/*  */
+/*  */
+/*  */
 
 .ueber_uns_banner{
   background-image: url(bilder/21.JPG);
