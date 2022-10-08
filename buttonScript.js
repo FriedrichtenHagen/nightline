@@ -36,9 +36,11 @@ button.addEventListener("click", e => {
     chatButton.appendChild(chatLink);
     // p3
     const p3= document.createElement("a")
-    p3.textContent = "Can’t reach us? Click here!"
-    infoBox.appendChild(p3)
-    
+    let linkContent = document.createTextNode("Chat Now!");
+    p3.appendChild(linkContent);
+    p3.title = "+49 341 9737777";
+    p3.href = "tel:+493419737777";
+    chatButton.appendChild(chatLink);
 
 
 })
