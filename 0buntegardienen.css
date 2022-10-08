@@ -8,6 +8,15 @@
 }
 
 
+body {
+  background-image: url(bilder/Background.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 /* Header and Navigation Bar */
 
 .logo img{
@@ -23,7 +32,7 @@ width: 100%;
 justify-content: space-between;
 align-items: center;
 min-height: 5vh;
-z-index: 100;
+z-index: 10;
 }
 
 .nav-links{
@@ -62,7 +71,7 @@ z-index: 100;
 .burger div{
   width: 23px;
   height: 1px;
-  background-color: white;
+  background-color: black;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -126,7 +135,7 @@ z-index: 100;
 
 .lang_select_menu{
   position: relative;
-  color: white;
+  color: black;
   padding-right: 5px;
 }
 
@@ -189,13 +198,9 @@ z-index: 100;
 }
 
 .dieNummer{
-  background-color: white;
   padding: 10vw;
-  padding-bottom: 23%;
-  text-align: right;
-  letter-spacing: 2px;
-  color: #2f3669;
-  font-size: 1.5em;
+  padding-bottom: 2vw;
+  margin-top: 50px;
 }
 
 #hs_bild_1  {
@@ -255,15 +260,23 @@ z-index: 100;
   color: #2f3669;
 }
 
+.footer-wrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url( 'bilder/SKYLINE_SVG.svg' );
+  max-height: 250px;
+}
+
 .footer {
   position: relative;
-  width: 100%;
-  height: 100%;
+  background-color: #773cff;
 }
 
 .footer-text-cnt {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 43%;
   color: white;
   display: flex;
@@ -274,11 +287,28 @@ z-index: 100;
 
 .footer-text {
   font-size: 2.5em;
+  color: white;
 }
 
-.footer-impressum {}
+.footer-impressum {
+  color: white;
+}
 
+@media screen and (max-width:450px){
+  .footer-text-cnt {
+    left: 30%;
+  }
+  
+  .footer-text {
+    font-size: 1.5em;
+  }
 
+  .footer-placeholder {
+    width: 100%;
+    height: 40px;
+    background-color: #0400b5;
+  }
+}
 
 /*  */
 /*  */
@@ -466,22 +496,22 @@ z-index: 100;
   color: #2f3669;
   font-weight: bold;
 }
+
 .backgroundStart{
-  background-color: rgb(222, 181, 248);
   height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .centerField{
-
   height: 30rem;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+
 .contactButton{
   background-color: #FFD600;
   height: 300px;
@@ -506,10 +536,4 @@ z-index: 100;
 }
 .contactText{
   font-size: large;
-}
-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
 }
