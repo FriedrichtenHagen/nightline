@@ -517,6 +517,12 @@ z-index: 10;
   height: 300px;
   width: 300px;
   border-radius: 500px;
+  border: 0px;
+  cursor: pointer;
+}
+.contactButton:hover{
+  background-color: white;
+
 }
 .contactText{
   color: #0B009B
@@ -536,4 +542,24 @@ z-index: 10;
 }
 .contactText{
   font-size: large;
+  font-weight: bold;
+}
+
+.infoBox{
+  background-color:rgba(255, 255, 255, 0.7);
+  border-radius: 84px;
+  height: 300px;
+  width: 60vw;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+.startButton{
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
 }
