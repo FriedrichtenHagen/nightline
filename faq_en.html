@@ -1,79 +1,302 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Nightline Leipzig, dein Zuhörtelefon </title>
-  <link rel="icon" type="image/x-icon" href="bilder/logo_alt_ausgeschnitten_favicon (copy 1).png">
-  <meta name="description" Nightline Leipzig, das Leipziger Zuhörtelefon von Studierenden für Studierende. Ruf uns unter 0341 9737777 an,  wir hören dir zu. >
-  <link rel="stylesheet" href="0buntegardienen.css">
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/comfortaa-bold" type="text/css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" /> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />  
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-  <nav>
-  <div class="logo">
-    <a href="index.html"> <img src="bilder/logo_alt_ausgeschnitten.png" align="left" style="width:5vh; height:auto;" /> </a>
-  </div>
-  <ul class="nav-links">
-    <li>
-      <a href="ueber_uns.html">Unser Konzept</a>
-    </li>
-    <li>
-      <a href="mitmachen.html">Mitmachen</a>
-    </li>
-    <li>
-      <a href="impressum.html">Impres&shy;sum</a>
-    </li>
-  </ul>
-  <div class="lang_select_menu">
-    <div class="seleteced_lang">
-      DE / EN
-      <ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nightline Leipzig, dein Zuhörtelefon</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="bilder/logo_alt_ausgeschnitten_favicon (copy 1).png"
+    />
+    <meta
+      name="description"
+      Nightline
+      Leipzig,
+      das
+      Leipziger
+      Zuhörtelefon
+      von
+      Studierenden
+      für
+      Studierende.
+      Ruf
+      uns
+      unter
+      0341
+      9737777
+      an,
+      wir
+      hören
+      dir
+      zu.
+    />
+    <link rel="stylesheet" href="0buntegardienen.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/comfortaa-bold"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="bilder/logo_alt_ausgeschnitten.png"
+            align="left"
+            style="width: 5vh; height: auto"
+          />
+        </a>
+      </div>
+      <ul class="nav-links">
         <li>
-          <a href="index.html">Deutsch</a>
+          <a href="ueber_uns.html">Unser Konzept</a>
         </li>
         <li>
-          <a href="index_en.html">English</a>
+          <a href="mitmachen.html">Mitmachen</a>
+        </li>
+        <li>
+          <a href="impressum.html">Impres&shy;sum</a>
+        </li>
+        <li>
+          <a href="faq_en.html">FAQ</a>
+        </li>
+      </ul>
+      <div class="lang_select_menu">
+        <div class="seleteced_lang">
+          DE / EN
+          <ul>
+            <li>
+              <a href="faq.html">Deutsch</a>
+            </li>
+            <li>
+              <a href="faq_en.html">English</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <div class="banner">
+      <h1>Nightline Leipzig Test</h1>
+      <p>Schön, dass du da bist!</p>
+    </div>
+    <div class="dieNummer" id="zuhoeren">
+      <div class="grid grid-cols-2 space-x-5">
+        <!-- Image -->
+        <img
+          src="bilder/16A.JPG"
+          align="left"
+          style="width: 50vh; height: auto"
+          class="hidden lg:block"
+          id="hs_bild_1"
+        />
+        <!-- FAQs -->
+        <div class="col-span-2 lg:col-span-1">
+          <h1>
+            <span>Frequently asked questions</span>
+          </h1>
+          <div class="accordion " id="accordionExample">
+            <!-- Question 1 -->
+            <div class="accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingOne">
+                <button
+                  class="accordion-button relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                Who is allowed to call the Nightline?
+                </button>
+              </h>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-sm py-4 px-5">
+                  Primarily, our service is meant to be from students for students. In principle, however, any person with the need for someone to talk to can call us.
+                </div>
+              </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingTwo">
+                <button
+                  class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                What can I talk about when calling the Nightline?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-sm py-4 px-5">
+                  You can talk about anything that’s on your mind. Every concern has its justification – whether small or big. You don’t have to come to us with dramatic problems only, it is enough if you only need someone to talk to. Of course, we also want to feel comfortable during the call and will respect our own personal boundaries during every conversation.
+                </div>
+              </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingThree">
+                <button
+                  class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                What information do I have to give about myself?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-sm py-4 px-5">
+                  You don’t have to say anything about yourself. If you like to be called by a name, you can just make one up or just tell us your first name.
+                </div>
+              </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingFour">
+                <button
+                  class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                Is the Nightline anonymous?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-sm py-4 px-5">
+                  Yes, no information is passed on to third parties.
+                </div>
+              </div>
+            </div>
+            <!-- Question 5 -->
+            <div class="accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingFive">
+                <button
+                  class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                Who is sitting on the other side of the line?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-sm py-4 px-5">
+                  We, the Nightline Leipzig, are students of various disciplines who are well prepared for your call through training, regular supervisions and, in some cases, many years of experience.
+                </div>
+              </div>
+            </div>
+            <!-- Question 6 -->
+            <div class="accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingSix">
+                <button
+                  class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                How can I start as a listener myself?
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body  text-sm py-4 px-5">
+                  Look for the section “Take part” on our website or email us at _______
+  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <div class="derChat">
+      <h1>Unser anonymer Chat</h1>
+      <br />
+      <h3>
+        steht dir in der Vorlesungszeit mittwochs zwischen 21 und 0 Uhr zur
+        Verfügung.
+      </h3>
+      <br />
+      <iframe
+        src="https://www.nightline.ch/chat/leipzig/"
+        frameborder="0"
+        width="350"
+        height="50"
+      >
+      </iframe>
+    </div>
+    <div class="fussboden">
+      <ul>
+        <li>
+          <a href="#zuhoeren"> <h2>Wir hören dir zu.</h2> </a>
         </li>
       </ul>
     </div>
-  </div>
-  <div class="burger">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-  </div>
-  </nav>
-<div class="banner">
-<h1> Nightline Leipzig Test</h1>
-<p> Schön, dass du da bist!</p>
-</div>
-<div class="dieNummer" id="zuhoeren">
-  <img src="bilder/16A.JPG" align="left" style="width:50vh; height:auto;" id="hs_bild_1" />
-  <h1> Unsere Nummer ist die </h1>
-  <h1> <a href="tel:+49 341 9737777"> 0341 9737777</a></h1>
-  <h3> Du kannst uns in der Vorlesungszeit montags bis freitags zwischen 21 und 0 Uhr erreichen. </h3>
-  <br>
-  <p> Auf <a href="http://nightlines.eu/erreichbarkeit/"> Nightlines.eu</a> findest du auch die Erreichbarkeiten der anderen Nightlines. </p>
-</div>
-<div class="derChat">
-  <h1>Unser anonymer Chat </h1>
-  <br>
-  <h3>steht dir in der Vorlesungszeit mittwochs zwischen 21 und 0 Uhr zur Verfügung. </h3>
-  <br>
-  <iframe src="https://www.nightline.ch/chat/leipzig/" frameBorder="0" width="350" height="50"> </iframe>
-</div>
-<div class="fussboden">
-  <ul>
-  <li>
-   <a href="#zuhoeren"> <h2>Wir hören dir zu. </h2> </a>
-  </li>
-</ul>
-</div>
-  <script src="0navmenue.js"></script>
-</body>
+    <script src="0navmenue.js"></script>
+  </body>
 </html>
