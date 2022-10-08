@@ -52,6 +52,9 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <style>
+      a:hover {color: red}
+    </style>
   </head>
   <body>
     <nav>
@@ -113,7 +116,7 @@
           <div class="accordion-item bg-white border border-gray-200">
             <h2 class="accordion-header mb-0" id="headingOne">
               <button
-                class="accordion-button relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                class="accordion-button collapsed flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
@@ -125,11 +128,11 @@
             </h2>
             <div
               id="collapseOne"
-              class="accordion-collapse collapse show"
+              class="accordion-collapse collapse"
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body py-4 px-5">
+              <div class="accordion-body py-4 px-5 text-sm">
                 Vorrangig sind wir ein Zuhörtelefon von Studierenden für Studierende. Grundsätzlich kann jedoch jede Person mit dem Bedürfnis nach einem offenen Ohr bei uns anrufen.
               </div>
             </div>
@@ -154,7 +157,7 @@
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body py-4 px-5">
+              <div class="accordion-body py-4 px-5 text-sm">
                 Du kannst über alles, was dich beschäftigt, mit uns sprechen. Jedes Anliegen hat seine Berechtigung – ob klein oder groß. Du musst nicht mit besonders dramatischen Problemen zu uns kommen. Es reicht schon, dass du mit uns reden möchtest. Natürlich müssen aber auch wir uns wohlfühlen und achten bei jedem Telefonat auf unsere persönlichen Grenzen.
               </div>
             </div>
@@ -179,7 +182,7 @@
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body py-4 px-5">
+              <div class="accordion-body py-4 px-5 text-sm">
                 Du musst gar nichts über dich sagen. Wenn du gern mit Namen angesprochen werden willst, kannst du dir einfach einen ausdenken oder uns nur deinen Vornamen sagen.
               </div>
             </div>
@@ -204,7 +207,7 @@
               aria-labelledby="headingFour"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body py-4 px-5">
+              <div class="accordion-body py-4 px-5 text-sm">
                 Ja, es werden keinerlei Informationen an Dritte weitergegeben.
               </div>
             </div>
@@ -229,7 +232,7 @@
               aria-labelledby="headingFive"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body py-4 px-5">
+              <div class="accordion-body py-4 px-5 text-sm">
                 Wir, die Nightline Leipzig, sind Studierende verschiedener Fachrichtungen und sind durch eine Schulung, regelmäßige Supervisionen und teilweise jahrelange Erfahrung bestens auf deinen Anruf vorbereitet.
               </div>
             </div>
@@ -254,7 +257,7 @@
               aria-labelledby="headingSix"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body py-4 px-5">
+              <div class="accordion-body py-4 px-5 text-sm">
                 Klicke hier auf der Homepage auf <a href="https://stud.uni-leipzig.de/~nightline/mitmachen.html">„Mitmachen“</a>  oder schreib uns unter <a href="mailto:nightline-leipzig@web.de">nightline-leipzig@web.de</a>
               </div>
             </div>
@@ -281,7 +284,7 @@
     <div class="fussboden">
       <ul>
         <li>
-          <a href="#zuhoeren"> <h2>Wir hören dir zu.</h2> </a>
+          <a href="https://stud.uni-leipzig.de/~nightline/index.html#zuhoeren"> <h2>Wir hören dir zu.</h2> </a>
         </li>
       </ul>
     </div>
