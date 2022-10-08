@@ -456,3 +456,50 @@ background-color: #2f3669;
   font-weight: bold;
   font-style: normal;
 }
+.backgroundStart{
+  background-color: rgb(222, 181, 248);
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerField{
+
+  height: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactButton{
+  background-color: #FFD600;
+  height: 300px;
+  width: 300px;
+  border-radius: 500px;
+}
+.contactText{
+  color: #0B009B
+}
+.needToTalk{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+}
+.talk{
+  font-size: 9vw;
+}
+.students{
+  font-size: 3vw;
+}
+.contactText{
+  font-size: large;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
