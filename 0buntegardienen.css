@@ -292,21 +292,7 @@ z-index: 10;
   color: white;
 }
 
-@media screen and (max-width:450px){
-  .footer-text-cnt {
-    left: 27%;
-  }
-  
-  .footer-text {
-    font-size: 1.5em;
-  }
 
-  .footer-placeholder {
-    width: 100%;
-    height: 30px;
-    background-color: #0400b5;
-  }
-}
 
 /*  */
 /*  */
@@ -503,23 +489,28 @@ z-index: 10;
 }
 
 .centerField{
-  height: 30rem;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .contactButton{
   background-color: #FFD600;
-  height: 300px;
-  width: 300px;
+
+  min-height: 200px;
+  min-width: 200px;
   border-radius: 500px;
   border: 0px;
   cursor: pointer;
 }
 .contactButton:hover{
   background-color: white;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 5000ms linear;
+    transition: background-color 500ms linear;
 
 }
 .contactText{
@@ -533,7 +524,7 @@ z-index: 10;
   color: white;
 }
 .talk{
-  font-size: 9vw;
+  font-size: 5vw;
 }
 .students{
   font-size: 3vw;
@@ -555,9 +546,30 @@ z-index: 10;
   align-items: center;
   text-align: center;
   text-decoration: none;
+  min-width: 350px;
 }
 .startButton{
   background-color: white;
   border-radius: 20px;
   padding: 20px;
+}
+
+@media screen and (max-width:450px){
+  .footer-text-cnt {
+    left: 27%;
+  }
+  
+  .footer-text {
+    font-size: 1.5em;
+  }
+
+  .footer-placeholder {
+    width: 100%;
+    height: 30px;
+    background-color: #0400b5;
+  }
+  .talk{
+    font-size: 35px;
+  }
+
 }
