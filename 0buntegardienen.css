@@ -53,6 +53,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  overflow: hidden;
 }
 
 /* Header and Navigation Bar */
@@ -539,6 +540,49 @@ z-index: 10;
 }
 
 
+/*  */
+/* Über Uns */
+/*  */
+
+.about-us-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.about-us-scroll {
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.about-us-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.about-us-text {
+  height: 85%;
+  width: 60%;
+  color: #0400b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.about-us-text h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.about-us-text h2 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
 
 /*  */
 /* Responsive / Mobile */
@@ -569,6 +613,11 @@ z-index: 10;
   .nav-links{
     top: 40vw;
     width: 50vw;
+  }
+
+  .about-us-text {
+    height: 35%;
+    width: 75%;
   }
 
 }
