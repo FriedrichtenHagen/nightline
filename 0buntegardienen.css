@@ -36,31 +36,37 @@ z-index: 10;
 }
 
 .nav-links{
+  position: absolute;
+  height: 50vh;
+  width: 15vw;
+  top: 10vw;
+  right: 0px;
+  /* background-image: url(bilder/Background.png);
+  background-size: cover; */
+  background-color: #996dff;
   display: flex;
-  justify-content: space-around;
-  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  gap: 20px;
+  overflow-x: hidden;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 1px 1px #7B7A72;
 }
 
-.nav-links li{
-  list-style: none;
+.nav-active{
+  transform: translateX(0%);
+  overflow-x: visible;
 }
 
 .nav-links a{
-  color: white;
+  color: #f2f2f2;
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: bold;
   padding: 10px;
-}
-
-.nav-links:hover ul{
-  display: block;
-}
-
-.nav-links li a:hover{
-  color: #2f3669;
-  background-color: white;
-  border-radius: 2px;
 }
 
 .burger{
@@ -76,36 +82,13 @@ z-index: 10;
   transition: all 0.3s ease;
 }
 
-/* @media screen and (max-width:800px){ */
-  body{
-    overflow-x: hidden;
-  }
+.header-flex {
+  display: flex;
+  gap: 10px;
+}
 
-  .main-content {
-    padding-top: 50px;
-  }
-
-  .nav-links{
-    position: absolute;
-    right: 0px;
-    height: 100vh;
-    top: 0;
-    background-color:  #2f3669;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 50vw;
-    transform: translateX(100%);
-    transition: transform 0.3s;
-    padding-top: 65px;
-    gap: 20px;
-  }
-
-/* } */
-
-.nav-active{
-  transform: translateX(0%);
+.main-content {
+  padding-top: 50px;
 }
 
 @keyframes navLinkFade{
@@ -134,12 +117,12 @@ z-index: 10;
 }
 
 .lang_select_menu{
-  position: relative;
   color: black;
-  padding-right: 5px;
+  display: flex;
+  gap: 5px;
 }
 
-.lang_select_menu ul{
+/* .lang_select_menu ul{
   position: absolute;
   top: 20px;
   right: 0;
@@ -173,7 +156,7 @@ z-index: 10;
 
 .lang_select_menu ul li a:hover{
   color: blue;
-}
+} */
 
 
 /*  */
@@ -222,43 +205,9 @@ z-index: 10;
   font-size: 1.5em;
 }
 
-.fussboden{
-  padding: 5%;
-  letter-spacing: 3px;
-  text-align: center;
-  background-color: #2f3669;
-  width: 100%;
-  font-size: 1.5em;
-  text-decoration-color: white;
-  white-space: nowrap;
-}
-
-.fussboden ul{
-  margin: auto;
-  width: 16em;
-}
-
-.fussboden li{
-  list-style: none;
-}
-
-.fussboden a{
-  text-decoration: none;
-  color: white;
-}
-
 /*  */
 /* Footer */
 /*  */
-
-.fussboden li:hover{
-  background-color: white;
-  border-radius: 5px;
-}
-
-.fussboden li a:hover{
-  color: #2f3669;
-}
 
 .footer-wrapper {
   position: fixed;
@@ -342,56 +291,10 @@ z-index: 10;
   font-size: 1.5em;
 }
 
-.mithelfen_banner{
-  background-image: url(bilder/22A.JPG);
-  background-size: cover;
-  padding: 10vw;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-  background-position: top center;
-  text-align: left;
-  color:     white;
-  letter-spacing: 2px;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
 #uu_bild{
   float: right;
   margin: 15px 15px 15px 0;
   border-radius: 10px;
-}
-
-.mithelfen_info_1{
-  background-color: white;
-  background-size: cover;
-  padding: 10vw;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  letter-spacing: 2px;
-  color: #2f3669;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-.danke_an{
-  background-image: url(bilder/4A.JPG);
-  background-size: cover;
-  padding: 10vw;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-  background-position: top center;
-  text-align: left;
-  color:     white;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 1.5em;
 }
 
 .impressumbanner{
@@ -554,6 +457,40 @@ z-index: 10;
   padding: 20px;
 }
 
+
+/*  */
+/* Mitmachen / Participate */
+/*  */
+
+.participate-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.participate-text {
+  width: 50%;
+  color: #0400b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.participate-text h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+
+/*  */
+/* Responsive / Mobile */
+/*  */
+
 @media screen and (max-width:450px){
   .footer-text-cnt {
     left: 27%;
@@ -570,6 +507,15 @@ z-index: 10;
   }
   .talk{
     font-size: 35px;
+  }
+
+  .logo img{
+    max-height: 30px
+  }
+
+  .nav-links{
+    top: 40vw;
+    width: 50vw;
   }
 
 }
