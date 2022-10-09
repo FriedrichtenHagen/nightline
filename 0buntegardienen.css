@@ -602,6 +602,11 @@ z-index: 10;
     width: 50vw;
   }
 
+  .participate-text {
+    height: 35%;
+    width: 75%;
+  }
+
   .about-us-text {
     height: 35%;
     width: 75%;
