@@ -468,10 +468,12 @@ a:hover {color: red}
 }
 .talk {
   font-family: 'Poppins', monospace;
-  font-size: 5vw;
+  font-size: 4em;
+  text-align: center;
 }
 .students{
-  font-size: 3vw;
+  font-size: 1em;
+  text-align: center;
 }
 .contactText{
   font-size: large;
