@@ -218,10 +218,9 @@ z-index: 10;
 
 }
 
-.dieNummer{
-  padding: 10vw;
-  padding-bottom: 2vw;
-  margin-top: 50px;
+.faq-cnt{
+  padding: 2vw 10vw;
+  margin-top: 100px;
 }
 
 #hs_bild_1  {
@@ -518,12 +517,12 @@ z-index: 10;
 .participate-cnt {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 100px;
 }
 
 .participate-text {
-  width: 50%;
+  width: 60%;
   color: #0400b5;
   display: flex;
   justify-content: center;
@@ -531,7 +530,6 @@ z-index: 10;
   flex-direction: column;
   gap: 20px;
   text-align: center;
-
 }
 
 .participate-text h1 {
@@ -551,13 +549,13 @@ z-index: 10;
   margin-top: 100px;
 }
 
-.about-us-scroll {
+.scroll-cnt {
   overflow: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
 
-.about-us-scroll::-webkit-scrollbar {
+.scroll-cnt::-webkit-scrollbar {
   display: none;
 }
 
@@ -616,12 +614,12 @@ z-index: 10;
   }
 
   .participate-text {
-    height: 35%;
+    height: 70vh;
     width: 75%;
   }
 
   .about-us-text {
-    height: 35%;
+    height: 70vh;
     width: 75%;
   }
 
