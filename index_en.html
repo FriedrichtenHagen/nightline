@@ -3,73 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Nightline Leipzig, your listening service </title>
+  <title> Nightline Leipzig, dein Zuhörtelefon </title>
   <link rel="icon" type="image/x-icon" href="bilder/logo_alt_ausgeschnitten_favicon (copy 1).png">
-  <meta name="description" Nightline Leipzig, the listening service of Leipzig from Students for Students. Call us at 0341 9737777 , we listen to you. >
+  <meta name="description" Nightline Leipzig, das Leipziger Zuhörtelefon von Studierenden für Studierende. Ruf uns unter 0341 9737777 an,  wir hören dir zu. >
   <link rel="stylesheet" href="0buntegardienen.css">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/comfortaa-bold" type="text/css"/>
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+  />
+  <style>
+    a:hover {color: red}
+  </style>
+  <script defer src="buttonScript.js"></script>
 </head>
+
 <body>
   <nav>
-  <div class="logo">
-    <a href="index_en.html"> <img src="bilder/logo_alt_ausgeschnitten.png" align="left" style="width:5vh; height:auto;" /> </a>
-  </div>
-  <ul class="nav-links">
-    <li>
-      <a href="ueber_uns_en.html">Our concept</a>
-    </li>
-    <li>
-      <a href="mitmachen_en.html">Take part</a>
-    </li>
-    <li>
-      <a href="impressum_en.html">Web info</a>
-    </li>
-    <li>
-      <a href="faq_en.html">FAQ</a>
-    </li>
-  </ul>
-  <div class="lang_select_menu">
-    <div class="seleteced_lang">
-      EN / DE
-      <ul>
-        <li>
-          <a href="index.html">Deutsch</a>
-        </li>
-        <li>
-          <a href="index_en.html">English</a>
-        </li>
-      </ul>
+    <div class="logo">
+      <a href="index.html">
+        <img
+          src="bilder/NightLine Logo neu.png"
+          align="left"
+        />
+      </a>
+    </div>
+    <div class="nav-links">
+       <a href="ueber_uns_en.html">About us</a>
+       <a href="mitmachen_en.html">Take part</a>
+       <a href="faq_en.html">FAQ</a>
+     </div>
+     <div class="header-flex">
+       <div class="lang_select_menu">
+          <a href="index.html">DE</a>
+          <p>/</p>
+          <a href="index_en.html">EN</a>
+       </div>
+       <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+       </div>
+    </div>
+  </nav>
+
+  <div class="backgroundStart">
+    <div class="centerField">
+      <div class="needToTalk">
+        <p class="talk">Do you need to talk?</p>
+        <p class="students">We are students listening to students</p>
+      </div>
+      <button class="contactButton">
+        <p class="contactText">Call us!</p>
+      </button>
     </div>
   </div>
-  <div class="burger">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-  </div>
-  </nav>
-<div class="banner">
-<h1> Nightline Leipzig </h1>
-<p> Nice to have you! </p>
+  
+  <div class="footer-wrapper">
+    <div class="footer">
+        <object type="image/svg+xml" data="bilder/SKYLINE_SVG.svg" class="footer-svg">
+          Footer
+         </object>    
+         <div class="footer-text-cnt">
+            <a href="https://stud.uni-leipzig.de/~nightline/index.html#zuhoeren" class="footer-text"> <h2>Wir hören dir zu.</h2> </a>
+            <a href="impressum.html" class="footer-impressum">Impressum</a>
+         </div>
+      </div>
+   <div class="footer-placeholder"></div>
 </div>
-<div class="dieNummer" id="zuhoeren">
-  <img src="bilder/16A.JPG" align="left" style="width:50vh; height:auto;" id="hs_bild_1" />
-  <h1> Our phone number is <a href="tel:+49 341 9737777"> 0341 9737777</a></h1>
-  <h3> You can reach us during the semester between 9pm and 12am.</h3>
-  <br>
-  <p> At <a href="http://nightlines.eu/erreichbarkeit/"> Nightlines.eu</a> you'll find the avalibility of other Nightlines, whenever we're not.</p>
-</div>
-<div class="derChat">
-  <h1>Our anonymous chat </h1>
-  <h3>is avaliable to you on Wednesdays during lecture time.</h3>
-  <iframe src="https://www.nightline.ch/chat/leipzig/" frameBorder="0" width="350" height="50"> </iframe>
-</div>
-<div class="fussboden">
-  <ul>
-    <li>
-  <a href="#zuhoeren"> <h2>We listen to you. </h2> </a>
-    </li>
- </ul>
-</div>
+  
   <script src="0navmenue.js"></script>
 </body>
 </html>

@@ -129,7 +129,6 @@ z-index: 10;
 .main-content {
   padding-top: 50px;
 }
-
 @keyframes navLinkFade{
   from{
     opacity: 0;
@@ -441,7 +440,9 @@ z-index: 10;
 
 .contactButton{
   background-color: #FFD600;
-
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 5000ms linear;
+  transition: background-color 500ms linear;
   min-height: 200px;
   min-width: 200px;
   border-radius: 500px;
@@ -493,8 +494,20 @@ z-index: 10;
 }
 .startButton{
   background-color: white;
-  border-radius: 20px;
-  padding: 20px;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 5000ms linear;
+    transition: background-color 500ms linear;
+  border-radius: 40px;
+  padding: 13px;
+  margin: 6px;
+  
+}
+.startButton:hover{
+  background-color: #FFD600;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 5000ms linear;
+    transition: background-color 500ms linear;
+    color: black;
 }
 
 
