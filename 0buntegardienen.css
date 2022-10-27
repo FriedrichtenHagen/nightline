@@ -541,6 +541,7 @@ a:hover {color: red}
 
 .impressum-text {
   width: 60%;
+  height: 60vh;
   color: #0400b5;
   display: flex;
   justify-content: center;
