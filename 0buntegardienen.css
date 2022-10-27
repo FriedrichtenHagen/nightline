@@ -151,7 +151,10 @@ a:hover {color: red}
   gap: 5px;
 }
 
-
+h2{
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
 /*  */
 /* Main Page */
 /*  */
@@ -526,6 +529,7 @@ a:hover {color: red}
 .about-us-text h2 {
   font-size: 1em;
   font-weight: bold;
+
 }
 
 /*  */
