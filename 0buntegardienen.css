@@ -422,10 +422,12 @@ a:hover {color: red}
 }
 .talk {
   font-family: 'PoppinsBold', sans-serif;
-  font-size: 5vw;
+  font-size: 4em;
+  text-align: center;
 }
 .students{
-  font-size: 3vw;
+  font-size: 1em;
+  text-align: center;
 }
 .contactText{
   font-size: large;
@@ -435,7 +437,7 @@ a:hover {color: red}
 .infoBox{
   background-color:rgba(255, 255, 255, 0.7);
   border-radius: 40px;
-  height: 300px;
+  height: 370px;
   width: 60vw;
   padding: 40px;
   display: flex;
