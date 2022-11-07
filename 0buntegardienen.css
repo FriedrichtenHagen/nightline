@@ -227,6 +227,10 @@ h2{
   flex-direction: column;
 }
 
+.footer-svg {
+  pointer-events: none;
+}
+
 .footer-text {
   font-size: 2.5em;
   color: white;
@@ -529,7 +533,7 @@ h2{
 .about-us-text h2 {
   font-size: 1em;
   font-weight: bold;
-
+  margin-top: 10px;
 }
 
 /*  */
@@ -558,6 +562,16 @@ h2{
 .impressum-text h1 {
   font-size: 2em;
   font-weight: bold;
+}
+
+.impressum-text h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.imprint-flex {
+  margin: 25px;
+  text-align: start;
 }
 
 
