@@ -624,16 +624,19 @@ h2{
   .participate-text {
     height: 70vh;
     width: 75%;
+    text-align: left;
   }
 
   .about-us-text {
     height: 70vh;
     width: 75%;
+    text-align: left;
   }
 
   .impressum-text {
     height: 70vh;
     width: 75%;
+    text-align: left;
   }
 
 }
