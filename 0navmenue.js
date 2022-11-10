@@ -43,3 +43,4 @@ document.addEventListener('click', () => {
 })
 
 navSlide();
+// location.reload();
