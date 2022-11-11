@@ -640,3 +640,10 @@ h2{
   }
 
 }
+.accordion{
+  margin-bottom: 100px;
+}
+.faq-cnt{
+  overflow-x: scroll;
+
+}
