@@ -106,7 +106,7 @@ z-index: 10;
 .burger div{
   width: 23px;
   height: 1px;
-  background-color: black;
+  background-color: #2A327A;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -115,6 +115,7 @@ a:hover {color: red}
 .header-flex {
   display: flex;
   gap: 10px;
+  color: #2A327A;
 }
 
 .main-content {
@@ -146,7 +147,6 @@ a:hover {color: red}
 }
 
 .lang_select_menu{
-  color: black;
   display: flex;
   gap: 5px;
 }
