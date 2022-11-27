@@ -435,6 +435,7 @@ h2{
 .students{
   font-size: 1em;
   text-align: center;
+  padding: 5px;
 }
 .contactText{
   font-size: large;
