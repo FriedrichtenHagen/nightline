@@ -514,7 +514,7 @@ h2{
 }
 
 .about-us-text {
-  height: 60vh;
+  height: 63vh;
   width: 60%;
   color: #0400b5;
   display: flex;
@@ -638,5 +638,10 @@ h2{
     width: 75%;
     text-align: left;
   }
-
+}
+.accordion{
+  margin-bottom: 100px;
+}
+.faq-cnt{
+  overflow-x: scroll;
 }
