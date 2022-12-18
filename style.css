@@ -154,6 +154,9 @@ a:hover {color: red}
 h2{
   margin-bottom: 0px;
   margin-top: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
 }
 /*  */
 /* Main Page */
@@ -500,6 +503,12 @@ h2{
 .participate-text h1 {
   font-size: 2em;
   font-weight: bold;
+}
+.participate-text h2 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
