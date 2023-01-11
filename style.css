@@ -387,7 +387,7 @@ h2{
 }
 
 .backgroundStart{
-  height: 700px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,7 +399,7 @@ h2{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 250px;
 }
 
 .contactButton{
@@ -605,6 +605,9 @@ h2{
 /*  */
 
 @media screen and (max-width:450px){
+  .centerField{
+    margin-bottom: 20vh;
+  }
   .footer-text-cnt {
     left: 27%;
   }
