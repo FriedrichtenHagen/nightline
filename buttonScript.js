@@ -26,7 +26,7 @@ button.addEventListener("click", e => {
         callLink.classList.add("startButton")
         infoBox.appendChild(callLink);
         // p2
-        const p2= document.createTextNode("You can also use our anonymous chat on Wednesdays (9-12pm, in the semester)")
+        const p2= document.createTextNode("If the chat is not available at the moment, you can find other nightline chats here: nightlines.eu/erreichbarkeit")
         infoBox.appendChild(p2)
     
         // iframe
@@ -55,7 +55,7 @@ button.addEventListener("click", e => {
         callLink.classList.add("startButton")
         infoBox.appendChild(callLink);
         // p2
-        const p2= document.createTextNode("Du kannst dich auch mittwochs an unseren anonymen Chat wenden (21-24 Uhr, während des Semesters)")
+        const p2= document.createTextNode("Falls der Chat gerade nicht erreichbar ist, findest du unter nightlines.eu/erreichbarkeit weitere Möglichkeiten zum Chatten.")
         infoBox.appendChild(p2)
 
         // iframe
