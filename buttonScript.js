@@ -11,7 +11,7 @@ button.addEventListener("click", e => {
         infoBox.classList.add("infoBox")
         centerField.appendChild(infoBox)
         //create p1
-        const p1 = document.createTextNode("You can call us, we are here for you! (from 9-12pm Mo-Fr, in the semester)")
+        const p1 = document.createTextNode("You can call us, we are here for you! (from 9-12pm Mo-Fr, during the semester)")
         infoBox.appendChild(p1)
         // callButton
         // const callButton = document.createElement("button")
@@ -26,12 +26,12 @@ button.addEventListener("click", e => {
         callLink.classList.add("startButton")
         infoBox.appendChild(callLink);
         // p2
-        const p2= document.createTextNode("You can also use our anonymous chat on Wednesdays (9-12pm, in the semester)")
+        const p2= document.createTextNode("If the chat is not available at the moment, you can find other nightline chats here: nightlines.eu/erreichbarkeit")
         infoBox.appendChild(p2)
     
         // iframe
         const ifrm= document.createElement("iframe")
-        ifrm.setAttribute("src", "https://www.nightline.ch/chat/leipzig/");
+        ifrm.setAttribute("src", "https://chat.archimedes-gs.de/leipzig/");
         ifrm.style.width = "350px";
         ifrm.style.height = "50px";
         infoBox.appendChild(ifrm);
@@ -55,12 +55,12 @@ button.addEventListener("click", e => {
         callLink.classList.add("startButton")
         infoBox.appendChild(callLink);
         // p2
-        const p2= document.createTextNode("Du kannst dich auch Mittwochs an unseren anonymen Chat wenden (21-24 uhr, während des Semesters)")
+        const p2= document.createTextNode("Falls der Chat gerade nicht erreichbar ist, findest du unter nightlines.eu/erreichbarkeit weitere Möglichkeiten zum Chatten.")
         infoBox.appendChild(p2)
 
         // iframe
         const ifrm= document.createElement("iframe")
-        ifrm.setAttribute("src", "https://www.nightline.ch/chat/leipzig/");
+        ifrm.setAttribute("src", "https://chat.archimedes-gs.de/leipzig/");
         ifrm.style.width = "350px";
         ifrm.style.height = "50px";
         infoBox.appendChild(ifrm);

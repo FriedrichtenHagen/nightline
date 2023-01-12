@@ -106,7 +106,7 @@ z-index: 10;
 .burger div{
   width: 23px;
   height: 1px;
-  background-color: black;
+  background-color: #2A327A;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -115,6 +115,7 @@ a:hover {color: red}
 .header-flex {
   display: flex;
   gap: 10px;
+  color: #2A327A;
 }
 
 .main-content {
@@ -146,7 +147,6 @@ a:hover {color: red}
 }
 
 .lang_select_menu{
-  color: black;
   display: flex;
   gap: 5px;
 }
@@ -154,6 +154,9 @@ a:hover {color: red}
 h2{
   margin-bottom: 0px;
   margin-top: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
 }
 /*  */
 /* Main Page */
@@ -384,7 +387,7 @@ h2{
 }
 
 .backgroundStart{
-  height: 700px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -396,7 +399,7 @@ h2{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 250px;
 }
 
 .contactButton{
@@ -435,6 +438,7 @@ h2{
 .students{
   font-size: 1em;
   text-align: center;
+  padding: 5px;
 }
 .contactText{
   font-size: large;
@@ -499,6 +503,12 @@ h2{
 .participate-text h1 {
   font-size: 2em;
   font-weight: bold;
+}
+.participate-text h2 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -595,6 +605,9 @@ h2{
 /*  */
 
 @media screen and (max-width:450px){
+  .centerField{
+    margin-bottom: 20vh;
+  }
   .footer-text-cnt {
     left: 27%;
   }
@@ -638,12 +651,10 @@ h2{
     width: 75%;
     text-align: left;
   }
-
 }
 .accordion{
   margin-bottom: 100px;
 }
 .faq-cnt{
   overflow-x: scroll;
-
 }
