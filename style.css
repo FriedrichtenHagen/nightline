@@ -490,7 +490,7 @@ h2{
 }
 
 .participate-text {
-  width: 60%;
+  width: 35%;
   color: #0400b5;
   display: flex;
   justify-content: center;
@@ -525,7 +525,7 @@ h2{
 
 .about-us-text {
   height: 63vh;
-  width: 60%;
+  width: 35%;
   color: #0400b5;
   display: flex;
   justify-content: center;
@@ -558,7 +558,7 @@ h2{
 }
 
 .impressum-text {
-  width: 60%;
+  width: 35%;
   height: 60vh;
   color: #0400b5;
   display: flex;
@@ -595,7 +595,7 @@ h2{
   scrollbar-width: none;  /* Firefox */
 }
 
-.scroll-cnt::-webkit-scrollbar {
+.scroll-cnt::-webkit-scrollbar-thumb {
   display: none;
 }
 
@@ -634,10 +634,18 @@ h2{
     width: 50vw;
   }
 
+  .participate-cnt {
+    margin-top: 60px;
+  }
+
   .participate-text {
     height: 70vh;
     width: 75%;
     text-align: left;
+  }
+
+  .about-us-cnt {
+    margin-top: 60px;
   }
 
   .about-us-text {
@@ -646,15 +654,27 @@ h2{
     text-align: left;
   }
 
+  .impressum-cnt {
+    margin-top: 60px;
+  }
+
   .impressum-text {
     height: 70vh;
     width: 75%;
     text-align: left;
   }
+
+  .faq-cnt {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
 }
+
 .accordion{
   margin-bottom: 100px;
 }
+
 .faq-cnt{
   overflow-x: scroll;
 }
