@@ -54,7 +54,7 @@ button.addEventListener("click", e => {
         callLink.href = "tel:+493419737777";
         callLink.classList.add("startButton")
         infoBox.appendChild(callLink);
-        // p2
+        // p2 ADD LINK HERE
         const p2= document.createTextNode("Falls der Chat gerade nicht erreichbar ist, findest du unter nightlines.eu/erreichbarkeit weitere Möglichkeiten zum Chatten.")
         infoBox.appendChild(p2)
 
@@ -65,7 +65,4 @@ button.addEventListener("click", e => {
         ifrm.style.height = "50px";
         infoBox.appendChild(ifrm);
     }
- 
-
-
 })
