@@ -397,12 +397,14 @@ h2{
   height: 40vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   margin-bottom: 250px;
 }
 
 .contactButton{
+  display: none;
+  justify-content: center;
+  align-items: center;
   background-color: #FFD600;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 5000ms linear;
@@ -418,8 +420,9 @@ h2{
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 5000ms linear;
     transition: background-color 500ms linear;
-
 }
+
+
 .contactText{
   color: #0B009B
 }
@@ -448,16 +451,18 @@ h2{
 .infoBox{
   background-color:rgba(255, 255, 255, 0.7);
   border-radius: 40px;
-  height: 370px;
-  width: 60vw;
+  width: 50vw;
   padding: 40px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   text-decoration: none;
   min-width: 350px;
+}
+.active{
+  display: flex;
 }
 .startButton{
   background-color: white;
