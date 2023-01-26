@@ -39,7 +39,7 @@
   height: 100%;
 }
 body {
-  background-image: url(bilder/Background.png);
+  background-image: url(bilder/Background_mit_sternen.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
