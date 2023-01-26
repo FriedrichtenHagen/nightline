@@ -35,14 +35,16 @@
   font-style: normal; 
   font-size: 16px;
 }
-
+:root{
+  height: 100%;
+}
 body {
   background-image: url(bilder/Background.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -180,8 +182,8 @@ h2{
 }
 
 .faq-cnt{
-  padding: 2vw 10vw;
-  margin-top: 100px;
+  padding: 15vh 10vw 15vh 10vw;
+  overflow-y: scroll;
 }
 
 #hs_bild_1  {
@@ -659,6 +661,4 @@ h2{
 .accordion{
   margin-bottom: 100px;
 }
-.faq-cnt{
-  overflow-x: scroll;
-}
+
