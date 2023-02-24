@@ -666,3 +666,47 @@ h2{
   margin-bottom: 100px;
 }
 
+
+/*
+faq styling
+*/
+
+.faqAccordion{
+  background-color: #f9f9f9;
+  width: 80vw;
+  margin-bottom: 100px;
+
+}
+.faqAnswer{
+  padding-left: 2.5rem;
+  font-size: .875rem;
+}
+.faqAnswer, .faqQuestion{
+
+  line-height: 1.25rem;
+  text-align: left;
+  padding-right: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid rgba(229, 231, 235, 0.474);
+
+}
+.faqQuestion{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.125rem;
+  padding-left: 1.25rem;
+}
+.faqQuestionIcon{
+  height: .875rem;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: ease-in-out 0.3s;
+}
+.faqHidden{
+  display: none;
+}
+.faqActive{
+  transform: rotate(180deg);
+}
