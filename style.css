@@ -615,6 +615,11 @@ h2{
 /*  */
 
 @media screen and (max-width:450px){
+  body {
+    background-image: url(bilder/Background_mit_sternen_mobile.png);
+  }
+
+
   .centerField{
     margin-bottom: 0px;
   }
