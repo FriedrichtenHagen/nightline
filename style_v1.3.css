@@ -35,14 +35,16 @@
   font-style: normal; 
   font-size: 16px;
 }
-
+:root{
+  height: 100%;
+}
 body {
-  background-image: url(bilder/Background.png);
+  background-image: url(bilder/Background_mit_sternen.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -177,11 +179,6 @@ h2{
    font-weight: bold;
    font-size: 1.8em;
 
-}
-
-.faq-cnt{
-  padding: 2vw 10vw;
-  margin-top: 100px;
 }
 
 #hs_bild_1  {
@@ -394,15 +391,16 @@ h2{
 }
 
 .centerField{
-  height: 40vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   margin-bottom: 250px;
 }
 
 .contactButton{
+  display: none;
+  justify-content: center;
+  align-items: center;
   background-color: #FFD600;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 5000ms linear;
@@ -418,8 +416,9 @@ h2{
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 5000ms linear;
     transition: background-color 500ms linear;
-
 }
+
+
 .contactText{
   color: #0B009B
 }
@@ -448,16 +447,18 @@ h2{
 .infoBox{
   background-color:rgba(255, 255, 255, 0.7);
   border-radius: 40px;
-  height: 370px;
-  width: 60vw;
+  width: 50vw;
   padding: 40px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   text-decoration: none;
   min-width: 350px;
+}
+.active{
+  display: flex;
 }
 .startButton{
   background-color: white;
@@ -490,7 +491,7 @@ h2{
 }
 
 .participate-text {
-  width: 60%;
+  width: 35%;
   color: #0400b5;
   display: flex;
   justify-content: center;
@@ -525,7 +526,7 @@ h2{
 
 .about-us-text {
   height: 63vh;
-  width: 60%;
+  width: 35%;
   color: #0400b5;
   display: flex;
   justify-content: center;
@@ -558,7 +559,7 @@ h2{
 }
 
 .impressum-text {
-  width: 60%;
+  width: 35%;
   height: 60vh;
   color: #0400b5;
   display: flex;
@@ -593,11 +594,15 @@ h2{
   overflow: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  padding-bottom: 50px;
 }
 
-.scroll-cnt::-webkit-scrollbar {
+.scroll-cnt::-webkit-scrollbar-thumb {
   display: none;
 }
+
+
+
 
 
 /*  */
@@ -605,8 +610,13 @@ h2{
 /*  */
 
 @media screen and (max-width:450px){
+  body {
+    background-image: url(bilder/Background_mit_sternen_mobile.png);
+  }
+
+
   .centerField{
-    margin-bottom: 20vh;
+    margin-bottom: 0px;
   }
   .footer-text-cnt {
     left: 27%;
@@ -634,10 +644,18 @@ h2{
     width: 50vw;
   }
 
+  .participate-cnt {
+    margin-top: 60px;
+  }
+
   .participate-text {
     height: 70vh;
     width: 75%;
     text-align: left;
+  }
+
+  .about-us-cnt {
+    margin-top: 60px;
   }
 
   .about-us-text {
@@ -646,15 +664,64 @@ h2{
     text-align: left;
   }
 
+  .impressum-cnt {
+    margin-top: 60px;
+  }
+
   .impressum-text {
     height: 70vh;
     width: 75%;
     text-align: left;
   }
 }
+
 .accordion{
   margin-bottom: 100px;
 }
+
+/*
+faq styling
+*/
+
 .faq-cnt{
-  overflow-x: scroll;
+  padding: 15vh 10vw 15vh 10vw;
+  overflow-y: scroll;
+}
+.faqAccordion{
+  background-color: #f9f9f9;
+  width: 80vw;
+  margin-bottom: 200px;
+}
+.faqAnswer{
+  padding-left: 2.5rem;
+  font-size: .875rem;
+}
+.faqAnswer, .faqQuestion{
+
+  line-height: 1.25rem;
+  text-align: left;
+  padding-right: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid rgba(229, 231, 235, 0.474);
+
+}
+.faqQuestion{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.125rem;
+  padding-left: 1.25rem;
+}
+.faqQuestionIcon{
+  height: .875rem;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: ease-in-out 0.3s;
+}
+.faqHidden{
+  display: none;
+}
+.faqActive{
+  transform: rotate(180deg);
 }

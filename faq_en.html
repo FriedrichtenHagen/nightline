@@ -7,6 +7,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <script src="faq-accordion.js" defer></script>
     <meta
       name="description"
       Nightline
@@ -29,7 +30,7 @@
       dir
       zu.
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_v1.3.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -77,160 +78,59 @@
    </nav>
 
     <div class="faq-cnt">
-      <div class="grid grid-cols-1">
-        <div class="accordion" id="accordionExample">
-          <!-- Question 1 -->
-          <div class="accordion-item bg-white border border-gray-200">
-            <h2 class="accordion-header mb-0" id="headingOne">
-              <button
-                class="accordion-button collapsed flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-              Who is allowed to call the Nightline?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body py-4 px-5 text-sm">
-                Primarily, our service is meant to be from students for students. In principle, however, any person with the need for someone to talk to can call us.
-              </div>
+      <div class="faqAccordion">
+        <div class="faqQuestion">
+            <div class="faqQuestionText">              Who is allowed to call the Nightline?
             </div>
-          </div>
-          <!-- Question 2 -->
-          <div class="accordion-item bg-white border border-gray-200">
-            <h2 class="accordion-header mb-0" id="headingTwo">
-              <button
-                class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-              What can I talk about when calling the Nightline?
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body py-4 px-5 text-sm">
-                You can talk about anything that’s on your mind. Every concern has its justification – whether small or big. You don’t have to come to us with dramatic problems only, it is enough if you only need someone to talk to. Of course, we also want to feel comfortable during the call and will respect our own personal boundaries during every conversation.
-              </div>
-            </div>
-          </div>
-          <!-- Question 3 -->
-          <div class="accordion-item bg-white border border-gray-200">
-            <h2 class="accordion-header mb-0" id="headingThree">
-              <button
-                class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-              What information do I have to give about myself?
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body py-4 px-5 text-sm">
-                You don’t have to say anything about yourself. If you like to be called by a name, you can just make one up or just tell us your first name.
-               </div>
-            </div>
-          </div>
-          <!-- Question 4 -->
-          <div class="accordion-item bg-white border border-gray-200">
-            <h2 class="accordion-header mb-0" id="headingFour">
-              <button
-                class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >
-              Is the Nightline anonymous?
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingFour"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body py-4 px-5 text-sm">
-                Yes, no information is passed on to third parties.
-              </div>
-            </div>
-          </div>
-          <!-- Question 5 -->
-          <div class="accordion-item bg-white border border-gray-200">
-            <h2 class="accordion-header mb-0" id="headingFive">
-              <button
-                class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
-                aria-expanded="false"
-                aria-controls="collapseFive"
-              >
-              Who is sitting on the other side of the line?
-              </button>
-            </h2>
-            <div
-              id="collapseFive"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingFive"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body py-4 px-5 text-sm">
-                We, the Nightline Leipzig, are students of various disciplines who are well prepared for your call through training, regular supervisions and, in some cases, many years of experience.
-              </div>
-            </div>
-          </div>
-          <!-- Question 6 -->
-          <div class="accordion-item bg-white border border-gray-200">
-            <h2 class="accordion-header mb-0" id="headingSix">
-              <button
-                class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseSix"
-                aria-expanded="false"
-                aria-controls="collapseSix"
-              >
-              How can I start as a listener myself?
-              </button>
-            </h2>
-            <div
-              id="collapseSix"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingSix"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body py-4 px-5 text-sm">
-                Look for the section <a href="mitmachen_en.html">„Take part“</a>  or email us at <a href="mailto:nightline-leipzig@web.de">nightline-leipzig[att]web.de</a>
-              </div>
-            </div>
-          </div>
+            <img src="bilder/down-arrow.png" class="faqQuestionIcon" alt="">
         </div>
-      </div>
+        <div class="faqAnswer faqHidden">
+          Primarily, our service is meant to be from students for students. In principle, however, any person with the need for someone to talk to can call us.
+        </div>
+        <div class="faqQuestion">
+            <div class="faqQuestionText">What can I talk about when calling the Nightline?
+            </div>
+            <img src="bilder/down-arrow.png" class="faqQuestionIcon" alt="">
+        </div>
+        <div class="faqAnswer faqHidden">
+          You can talk about anything that’s on your mind. Every concern has its justification – whether small or big. You don’t have to come to us with dramatic problems only, it is enough if you only need someone to talk to. Of course, we also want to feel comfortable during the call and will respect our own personal boundaries during every conversation.
+        </div>
+        <div class="faqQuestion">
+            <div class="faqQuestionText"> What information do I have to give about myself?</div>
+            <img src="bilder/down-arrow.png" class="faqQuestionIcon" alt="">
+        </div>
+        <div class="faqAnswer faqHidden">
+          You don’t have to say anything about yourself. If you like to be called by a name, you can just make one up or just tell us your first name.        
+        </div>
+        <div class="faqQuestion">
+            <div class="faqQuestionText">Is the Nightline anonymous?
+            </div>
+            <img src="bilder/down-arrow.png" class="faqQuestionIcon" alt="">
+        </div>
+        <div class="faqAnswer faqHidden">
+          Yes, no information is passed on to third parties.    
+        </div>
+
+        <div class="faqQuestion">
+            <div class="faqQuestionText">
+              Who is sitting on the other side of the line?
+                </div>
+            <img src="bilder/down-arrow.png" class="faqQuestionIcon" alt="">
+        </div>
+        <div class="faqAnswer faqHidden">
+          We, the Nightline Leipzig, are students of various disciplines who are well prepared for your call through training, regular supervisions and, in some cases, many years of experience.
+        </div>
+
+        <div class="faqQuestion">
+            <div class="faqQuestionText">
+              How can I start as a listener myself?
+            </div>
+            <img src="bilder/down-arrow.png" class="faqQuestionIcon" alt="">
+        </div>
+        <div class="faqAnswer faqHidden">
+          Look for the section <a href="mitmachen_en.html">„Take part“</a>  or email us at <a href="mailto:nightline-leipzig@web.de">nightline-leipzig[att]web.de</a>
+        </div>  
+    </div>
     </div>
 
     <div class="footer-wrapper">
