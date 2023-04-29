@@ -594,10 +594,17 @@ h2{
   text-align: start;
 }
 
+.mail {
+  text-decoration-line: underline;
+}
 
 /*  */
 /* Scroll */
 /*  */
+.scroll-preparer{
+  height: 75vh;
+  display: flex;
+}
 
 .scroll-cnt {
   overflow: scroll;
@@ -685,9 +692,10 @@ faq styling
   }
 
   .footer-placeholder {
-    width: 100%;
-    height: 30px;
+    width: 110%;
+    height: 35px;
     background-color: #0400b5;
+    margin: -3px;
   }
   .talk{
     font-size: 35px;
@@ -734,6 +742,14 @@ faq styling
   .faq-cnt{
     padding: 15vh 10vw 15vh 10vw;
     overflow-y: scroll;
+  }
+
+  .infoBox{
+    padding: 30px 20px;
+  }
+
+  .needToTalk {
+    margin-bottom: 10px;
   }
 }
 
