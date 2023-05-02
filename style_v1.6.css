@@ -475,7 +475,7 @@ h2{
     transition: background-color 500ms linear;
   border-radius: 40px;
   padding: 13px;
-  margin: 6px;
+  margin: 15px;
   
 }
 .startButton:hover{
@@ -484,6 +484,9 @@ h2{
     -ms-transition: background-color 5000ms linear;
     transition: background-color 500ms linear;
     color: black;
+}
+.moreHelp {
+  margin-bottom: 20px;
 }
 
 
